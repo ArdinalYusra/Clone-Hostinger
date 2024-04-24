@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    list-style: none;
+    height: auto;
+    width: auto;
+}
+
+@layer utilities {
+    .wrapper {
+      @apply max-w-7xl md:px-10 lg:mx-auto lg:px-5 w-full;
+    }
+  
+    .flex-center {
+      @apply flex justify-center items-center;
+    }
+  
+    .flex-between {
+      @apply flex justify-between items-center;
+    }
+  }
