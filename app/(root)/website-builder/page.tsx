@@ -1,16 +1,16 @@
-import { List } from "@/components/shared/Coment_Component";
+import { List } from "@/components/shared/Comment_Component";
 import Hero_Section_List from "@/components/shared/Hero_Section_List";
 import Hostinger_List from "@/components/shared/Hostinger_List";
 import Hostinger_Review from "@/components/shared/Hostinger_Review";
+import Main_Section from "@/components/shared/Main_Section";
 import Button from "@/components/ui/Button";
 import { CREATE_WEBSITE_STEPS, CUSTOMIZATION_TOOLS } from "@/constants";
 import Image from "next/image";
 import React from "react";
-import { FaCheck } from "react-icons/fa6";
 
 const Website_Builder_Page = () => {
   return (
-    <div className="wrapper flex-col p-5 lg:py-10 lg:px-20 space-y-32">
+    <Main_Section>
       <Hero_Section_List
         image="/assets/images/online-website-builder-1.jpg"
         variant="black"
@@ -59,9 +59,7 @@ const Website_Builder_Page = () => {
               </div>
             ))}
           </div>
-          <div className="flex-center">
-            <Button variant="black">Get Started</Button>
-          </div>
+          <Button variant="black">Get Started</Button>
         </div>
       </div>
       <div className="flex flex-col lg:grid grid-cols-2">
@@ -175,12 +173,7 @@ const Website_Builder_Page = () => {
         </div>
       </div>
       <div className="flex-center flex-col space-y-10 py-10 px-5 lg:py-20 lg:px-40 bg-[#3b60c4] font-semibold text-white text-center">
-        <p
-          className="text-lg
-        "
-        >
-          All-in-One Solutions
-        </p>
+        <p className="text-lg">All-in-One Solutions</p>
         <h1 className="text-4xl">
           Start creating your website today.{" "}
           <span className="text-yellow-300">It is easier than you think</span>{" "}
@@ -188,7 +181,7 @@ const Website_Builder_Page = () => {
         </h1>
         <Button variant="white">Get started</Button>
       </div>
-    </div>
+    </Main_Section>
   );
 };
 

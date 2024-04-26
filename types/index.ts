@@ -11,6 +11,12 @@ export type FooterItemsWithSubmenuProps = {
     toggleOpen: () => void
 }
 
+export type ButtonProps = {
+    children: React.ReactNode;
+    variant?: "blue" | "black" | "white" | "outline" | "outlineWhite";
+    className?: string 
+  };
+
 export type HeroSectionListProps = {
     children: React.ReactNode
     image: string
@@ -21,3 +27,10 @@ export type HeroSectionListProps = {
     list2?: string
     list3?: string
 }
+
+export type ReviewComponentProps = {
+    children: React.ReactNode;
+    name: string;
+    job: string;
+    variant?: "white" | "blue" 
+  };

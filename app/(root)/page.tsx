@@ -3,18 +3,17 @@ import {
   Coment_List_Rating,
   List,
   Review_Component,
-} from "@/components/shared/Coment_Component";
+} from "@/components/shared/Comment_Component";
 import Hero_Section_List from "@/components/shared/Hero_Section_List";
 import Hostinger_List from "@/components/shared/Hostinger_List";
 import Hostinger_Review from "@/components/shared/Hostinger_Review";
+import Main_Section from "@/components/shared/Main_Section";
+import Button from "@/components/ui/Button";
 import Image from "next/image";
-import { FaRegUserCircle } from "react-icons/fa";
-import { GiCheckMark } from "react-icons/gi";
-import { IoIosStar } from "react-icons/io";
 
 export default function Home() {
   return (
-    <main className="flex flex-col p-5 lg:py-10 lg:px-20 gap-10">
+    <Main_Section>
       <Hero_Section_List
         image="/assets/images/hostinger-hero-section.png"
         variant="blue"
@@ -182,9 +181,7 @@ export default function Home() {
         <h1 className="font-semibold text-3xl text-blue-900">
           Join 2,002,312 Website Owners
         </h1>
-        <button className="bg-blue-600 px-10 py-2 rounded-md text-white font-semibold">
-          Get Started
-        </button>
+        <Button>Get Started</Button>
         <List>30-Day Money-Back Guarantee</List>
       </div>
       <div className="flex flex-col gap-5 px-5 py-10 bg-blue-600 text-white">
@@ -305,23 +302,15 @@ export default function Home() {
         </div>
       </div>
       <div className="flex-center flex-col gap-20">
-        <div>
-          <button className="px-10 py-3 rounded-md font-semibold text-blue-600 ring ring-blue-600">
-            Browse more client stories
-          </button>
-        </div>
+        <Button variant="outline">Browse more client stories</Button>
         <div className="flex-center flex-col gap-5">
           <h1 className="font-bold text-4xl text-center text-blue-900">
             Join 2,002,312 Website Owners
           </h1>
-          <div>
-            <button className="px-10 py-3 rounded-md font-semibold text-white bg-blue-600">
-              Get started
-            </button>
-          </div>
+          <Button>Get Started</Button>
           <List>30-Day Money-Back Guarantee</List>
         </div>
       </div>
-    </main>
+    </Main_Section>
   );
 }

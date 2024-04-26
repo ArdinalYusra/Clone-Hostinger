@@ -134,3 +134,36 @@ export const CUSTOMIZATION_TOOLS = [
     description: "Create, edit, and publish your website with ease on your chosen device.",
   },
 ]
+
+export const DOMAINS = [
+  {
+    name: ".com",
+    price: "$15.99",
+    discount: "$4.99",
+  },
+  {
+    name: ".online",
+    price: "$34.99",
+    discount: "$0.99",
+  },
+  {
+    name: ".shop",
+    price: "$34.99",
+    discount: "$0.99",
+  },
+  {
+    name: ".pro",
+    price: "$24.99",
+    discount: "$2.99",
+  },
+  {
+    name: ".net",
+    price: "$15.99",
+    discount: "$9.99",
+  },
+  {
+    name: ".xyz",
+    price: "$13.99",
+    discount: "$1.99",
+  },
+]

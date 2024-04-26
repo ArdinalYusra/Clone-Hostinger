@@ -17,7 +17,7 @@ const Hero_Section_List = ({
   return (
     <div className="space-y-10 lg:grid grid-cols-2 gap-5">
       <div
-        className={` ${text === "blue" ? "text-blue-800" : text === "white" ? "text-white" : "text-black"} flex flex-col justify-center items-center lg:justify-start lg:items-start gap-3 text-center lg:text-start`}
+        className={` ${text === "blue" ? "text-blue-900" : text === "white" ? "text-white" : "text-black"} flex flex-col justify-center items-center lg:justify-start lg:items-start gap-3 text-center lg:text-start`}
       >
         {children}
         <div className="flex flex-col gap-2 my-3 justify-center items-center lg:justify-start lg:items-start">
