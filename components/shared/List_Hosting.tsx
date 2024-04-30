@@ -7,7 +7,7 @@ type ListHostingProps = {
 
 const List_Hosting = ({ children }: ListHostingProps) => {
   return (
-    <div className="flex-between text-blue-900 text-sm">
+    <div className="flex-between text-sm">
       <span className="flex gap-2">
         <GiCheckMark />
         {children}
@@ -22,5 +22,5 @@ const List_Hosting = ({ children }: ListHostingProps) => {
 export default List_Hosting;
 
 export function Title({ children }: { children: React.ReactNode }) {
-  return <h1 className="text-xl font-bold text-blue-900">{children}</h1>;
+  return <h1 className="text-xl font-bold">{children}</h1>;
 }

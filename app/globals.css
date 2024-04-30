@@ -20,4 +20,8 @@
     .flex-between {
       @apply flex justify-between items-center;
     }
+
+    .image-cover {
+      @apply w-full h-full object-cover
+    }
   }

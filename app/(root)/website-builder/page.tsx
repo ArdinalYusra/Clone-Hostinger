@@ -1,4 +1,5 @@
 import { List } from "@/components/shared/Comment_Component";
+import FAQ_Website_Builder from "@/components/shared/FAQ_Website_Builder";
 import Hero_Section_List from "@/components/shared/Hero_Section_List";
 import Hostinger_List from "@/components/shared/Hostinger_List";
 import Hostinger_Review from "@/components/shared/Hostinger_Review";
@@ -35,7 +36,7 @@ const Website_Builder_Page = () => {
           <button className="p-2 bg-blue-700 rounded-full"></button>
           <button className="p-2 border border-slate-700 rounded-full"></button>
         </div>
-        <Hostinger_List />
+        <Hostinger_List bgPopular="bgOrange" />
       </div>
       <div className="flex flex-col gap-5 lg:flex-row-reverse">
         <div>
@@ -44,10 +45,10 @@ const Website_Builder_Page = () => {
             alt=""
             width={1000}
             height={1000}
-            className="h-full w-full object-cover"
+            className="image-cover"
           />
         </div>
-        <div className="flex flex-col gap-7 px-10 text-blue-800">
+        <div className="flex flex-col gap-7 px-10 text-blue-900">
           <h1 className="text-2xl font-semibold">
             Create a Website in 3 Easy Steps
           </h1>
@@ -81,11 +82,11 @@ const Website_Builder_Page = () => {
             alt=""
             height={1000}
             width={1000}
-            className="w-full h-full object-cover"
+            className="image-cover"
           />
         </div>
       </div>
-      <div className="flex-center flex-col text-center text-blue-800 space-y-10">
+      <div className="flex-center flex-col text-center text-blue-900 space-y-10">
         <h1 className="font-semibold text-2xl">
           Choose a Website Template That Inspires You
         </h1>
@@ -96,13 +97,13 @@ const Website_Builder_Page = () => {
         </p>
         <Button variant="black">Get Started</Button>
       </div>
-      <div className="flex-center flex-col text-center space-y-10 text-blue-800">
+      <div className="flex-center flex-col text-center space-y-10 text-blue-900">
         <h1 className="font-semibold text-2xl">Build A Website Your Way</h1>
         <p>
           Effortlessly perfect your website with user-friendly, intuitive
           customization tools.
         </p>
-        <div className="text-blue-800 space-y-10 px-10">
+        <div className="text-blue-900 space-y-10 px-10">
           {CUSTOMIZATION_TOOLS.map((tool, i) => (
             <div key={i} className="flex-center flex-col space-y-3">
               <div>
@@ -141,12 +142,12 @@ const Website_Builder_Page = () => {
             alt=""
             height={1000}
             width={1000}
-            className="h-full w-full object-cover"
+            className="image-cover"
           />
         </div>
       </div>
       <div className="flex flex-col gap-10 lg:grid grid-cols-2">
-        <div className="space-y-10 px-10 text-blue-800">
+        <div className="space-y-10 px-10 text-blue-900">
           <h1 className="font-semibold text-2xl">
             Drive Traffic That Converts
           </h1>
@@ -168,7 +169,7 @@ const Website_Builder_Page = () => {
             alt=""
             height={1000}
             width={1000}
-            className="w-full h-full object-cover"
+            className="image-cover"
           />
         </div>
       </div>
@@ -180,6 +181,14 @@ const Website_Builder_Page = () => {
           with Hostinger AI Website Builder.
         </h1>
         <Button variant="white">Get started</Button>
+      </div>
+      <div className="text-center space-y-10">
+        <h1 className="font-semibold text-2xl lg:text-4xl">Web Hosting FAQs</h1>
+        <p>
+          Find answers to frequently asked questions about website hosting
+          services.
+        </p>
+        <FAQ_Website_Builder />
       </div>
     </Main_Section>
   );

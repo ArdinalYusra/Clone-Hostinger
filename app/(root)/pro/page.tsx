@@ -3,6 +3,7 @@ import {
   List,
   Review_Component,
 } from "@/components/shared/Comment_Component";
+import FAQ_Pro from "@/components/shared/FAQ_Pro";
 import Hero_Section_List from "@/components/shared/Hero_Section_List";
 import Hostinger_List from "@/components/shared/Hostinger_List";
 import Hostinger_Review from "@/components/shared/Hostinger_Review";
@@ -52,7 +53,7 @@ const Pro_Page = () => {
                 alt=""
                 height={1000}
                 width={1000}
-                className="w-full h-full object-cover"
+                className="image-cover"
               />
             </div>
           </div>
@@ -76,7 +77,7 @@ const Pro_Page = () => {
                   alt=""
                   height={1000}
                   width={1000}
-                  className="w-full h-full object-cover"
+                  className="image-cover"
                 />
               </div>
             </div>
@@ -101,7 +102,11 @@ const Pro_Page = () => {
             Web Hosting for Professionals and Agencies
           </h1>
           <div>
-            <Hostinger_List />
+            <Hostinger_List
+              variant="white"
+              outline="outlineWhite"
+              bgPopular="bgPink"
+            />
           </div>
           <div className="flex-center">
             <button className="font-semibold text-lg text-blue-400 hover:text-blue-800">
@@ -133,7 +138,7 @@ const Pro_Page = () => {
                 alt=""
                 height={1000}
                 width={1000}
-                className="w-full h-full object-cover"
+                className="image-cover"
               />
             </div>
           </div>
@@ -157,7 +162,7 @@ const Pro_Page = () => {
                   alt=""
                   height={1000}
                   width={1000}
-                  className="w-full h-full object-cover"
+                  className="image-cover"
                 />
               </div>
             </div>
@@ -200,6 +205,20 @@ const Pro_Page = () => {
             </div>
           </Main_Section>
         </div>
+        <Main_Section>
+          <div className="space-y-5">
+            <div className="text-center space-y-10">
+              <h1 className="font-semibold text-2xl lg:text-4xl">
+                Profesional Web Hosting FAQs
+              </h1>
+              <p>
+                Find answers to frequently asked questions about Hostinger Pro
+                services.
+              </p>
+              <FAQ_Pro />
+            </div>
+          </div>
+        </Main_Section>
       </div>
     </>
   );

@@ -1,8 +1,7 @@
-import Navbar from "@/components/shared/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hostinger Pro - Hosting for Agencies and Profesionals",
+  title: "Log-in to Hostinger",
   description: "Made by Ardinal Yusra",
   icons: {
     icon: "/favicon.ico",
@@ -15,10 +14,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div>
-      <Navbar bgColor={"black"} />
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }

@@ -33,15 +33,10 @@ export default function Home() {
         <h1 className="text-blue-950 font-semibold text-center text-2xl lg:text-4xl">
           Pick Your Perfect Plan
         </h1>
-        <div className="flex-center gap-3">
-          <button className="p-2 border border-slate-700 rounded-full"></button>
-          <button className="p-2 bg-blue-700 rounded-full"></button>
-          <button className="p-2 border border-slate-700 rounded-full"></button>
-        </div>
         <Hostinger_List />
       </div>
       <div className="flex-center flex-col text-center pt-20 bg-slate-50 space-y-10">
-        <h1 className="text-3xl font-semibold text-blue-800">
+        <h1 className="text-3xl font-semibold text-blue-900">
           DATA Centers All Round the World
         </h1>
         <p className="text-sm px-20">
@@ -54,7 +49,7 @@ export default function Home() {
           alt="Maps"
           height={300}
           width={300}
-          className="w-full"
+          className="image-cover"
         />
       </div>
       <div className="lg:grid grid-cols-2 gap-5">
@@ -76,7 +71,7 @@ export default function Home() {
             alt=""
             height={300}
             width={300}
-            className="w-full"
+            className="image-cover"
           />
         </div>
       </div>
@@ -113,7 +108,7 @@ export default function Home() {
             alt=""
             height={300}
             width={300}
-            className="w-full"
+            className="image-cover"
           />
         </div>
       </div>
@@ -159,7 +154,7 @@ export default function Home() {
             alt=""
             height={300}
             width={300}
-            className="w-full"
+            className="image-cover"
           />
         </div>
       </div>
@@ -210,7 +205,7 @@ export default function Home() {
               alt=""
               height={300}
               width={300}
-              className="w-full"
+              className="image-cover"
             />
           </div>
         </div>
@@ -258,7 +253,7 @@ export default function Home() {
             alt=""
             height={300}
             width={300}
-            className="w-full"
+            className="image-cover"
           />
         </div>
       </div>

@@ -1,16 +1,21 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+"use client";
+
+import Footer from "@/components/shared/Footer";
+import Navbar from "@/components/shared/Navbar";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+
   return (
     <div>
-      {/* <Navbar /> */}
+      {pathname === "/" && <Navbar bgColor={"white"} />}
       {children}
-      {/* <Footer /> */}
+      <Footer bgColor={pathname === "/pro" ? "black" : "white"} />
     </div>
   );
 }

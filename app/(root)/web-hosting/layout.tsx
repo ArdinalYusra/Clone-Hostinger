@@ -2,7 +2,7 @@ import Navbar from "@/components/shared/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hostinger Pro - Hosting for Agencies and Profesionals",
+  title: "Web Hosting - A Fast and Secure Platform for Your Website",
   description: "Made by Ardinal Yusra",
   icons: {
     icon: "/favicon.ico",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      <Navbar bgColor={"black"} />
+      <Navbar bgColor={"white"} />
       {children}
     </div>
   );

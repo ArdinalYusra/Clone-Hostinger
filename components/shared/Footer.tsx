@@ -10,20 +10,26 @@ import {
 } from "react-icons/ti";
 import { FOOTER_ITEMS } from "@/constants";
 
-const Footer = () => {
+const Footer = ({ bgColor }: { bgColor?: "black" | "white" }) => {
   return (
-    <footer className="bg-blue-50 p-5 space-y-5 text-blue-800">
+    <footer
+      className={`p-5 space-y-5 ${bgColor === "black" ? "bg-black text-white" : "bg-blue-50 text-blue-900"}`}
+    >
       <div className="wrapper lg:flex lg:flex-row gap-5 space-y-5">
         <div className="space-y-5">
           <div>
             <Image
-              src={"/assets/images/hostinger.png"}
+              src={
+                bgColor === "black"
+                  ? "/assets/images/hostinger-logo-white.png"
+                  : "/assets/images/hostinger.png"
+              }
               alt="Hostinger Logo"
               width={100}
               height={100}
             />
           </div>
-          <p className="text-sm lg:text-base lg:max-w-lg">
+          <p className="text-sm lg:max-w-lg">
             We are a web hosting provider on a mission to bring success to
             everyone online. We constantly improve our server technology,
             provide professional support, and simplify site creation with our AI
@@ -47,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <Footer_Mobile />
+      <Footer_Mobile textColor={bgColor === "black" ? "white" : "blue"} />
       <div className="flex flex-row md:px-10 lg:px-20 gap-3 text-3xl text-white">
         <Link href={"/"} className="p-1 bg-blue-500 rounded-md">
           <TiSocialLinkedin />

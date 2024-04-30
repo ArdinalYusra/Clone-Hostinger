@@ -1,10 +1,18 @@
 import Hostinger_Component from "./Hostinger_Items";
 import List_Hosting, { Title } from "./List_Hosting";
 
-const Hostinger_List = () => {
+const Hostinger_List = ({
+  variant,
+  outline,
+  bgPopular,
+}: {
+  variant?: "white" | "blue";
+  outline?: "outlineBlue" | "outlineWhite";
+  bgPopular?: "bgOrange" | "bgPink";
+}) => {
   return (
     <div className="flex flex-row gap-10 overflow-x-auto">
-      <Hostinger_Component>
+      <Hostinger_Component variant={variant === "white" ? "white" : "blue"}>
         <div>
           <p className="font-semibold text-lg">Premium</p>
           <p className="text-sm">Everything you need to create your website</p>
@@ -27,7 +35,9 @@ const Hostinger_List = () => {
         </button>
         <p className="text-sm">$ 7.99 /mo when you renew</p>
         <hr className="border w-full" />
-        <div className="flex flex-col gap-5">
+        <div
+          className={`flex flex-col gap-5 ${variant === "white" ? "text-white" : "text-blue-950"}`}
+        >
           <div className="flex flex-col gap-5">
             <Title>Top Features</Title>
             <List_Hosting>Standard Performances</List_Hosting>
@@ -61,7 +71,18 @@ const Hostinger_List = () => {
           </div>
         </div>
       </Hostinger_Component>
-      <Hostinger_Component>
+      <Hostinger_Component
+        variant={variant === "white" ? "white" : "blue"}
+        outline={outline === "outlineWhite" ? "outlineWhite" : "outlineBlue"}
+        popular
+        bgPopular={
+          bgPopular === "bgPink"
+            ? "bgPink"
+            : bgPopular === "bgOrange"
+              ? "bgOrange"
+              : "bgSlate"
+        }
+      >
         <div>
           <p className="font-semibold text-lg">Business</p>
           <p className="text-sm">
@@ -88,7 +109,9 @@ const Hostinger_List = () => {
         </button>
         <p className="text-sm">$8.99 /mo when you renew</p>
         <hr className="border w-full" />
-        <div className="flex flex-col gap-5">
+        <div
+          className={`flex flex-col gap-5 ${variant === "white" ? "text-white" : "text-blue-950"}`}
+        >
           <div className="flex flex-col gap-5">
             <Title>Top Feature</Title>
             <List_Hosting>Increased Performance (Up to 5x)</List_Hosting>
@@ -122,7 +145,7 @@ const Hostinger_List = () => {
           </div>
         </div>
       </Hostinger_Component>
-      <Hostinger_Component>
+      <Hostinger_Component variant={variant === "white" ? "white" : "blue"}>
         <div>
           <p className="font-semibold text-lg">Cloud Startup</p>
           <p className="text-sm">
@@ -149,7 +172,9 @@ const Hostinger_List = () => {
         </button>
         <p className="text-sm">$19.99 /mo when you renew</p>
         <hr className="border w-full" />
-        <div className="flex flex-col gap-5">
+        <div
+          className={`flex flex-col gap-5 ${variant === "white" ? "text-white" : "text-blue-950"}`}
+        >
           <div className="flex flex-col gap-5">
             <Title>Top Feature</Title>
             <List_Hosting>Maximum Performance (Up to 10x)</List_Hosting>

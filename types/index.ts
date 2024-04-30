@@ -34,3 +34,11 @@ export type ReviewComponentProps = {
     job: string;
     variant?: "white" | "blue" 
   };
+
+ export type HostingerItemsProps = {
+    children: React.ReactNode;
+    variant?: "blue" | "white";
+    outline?: "outlineBlue" | "outlineWhite";
+    popular?: boolean;
+    bgPopular?: "bgPink" | "bgOrange" | "bgSlate";
+  };

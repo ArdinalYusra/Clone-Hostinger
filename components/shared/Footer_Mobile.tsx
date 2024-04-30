@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-const Footer_Mobile = () => {
+const Footer_Mobile = ({ textColor }: { textColor: "white" | "blue" }) => {
   const [submenu, setSubmenu] = useState(null);
 
   const handleClick = (index: any) => {
@@ -14,7 +14,9 @@ const Footer_Mobile = () => {
 
   return (
     <>
-      <div className="flex md:hidden flex-col gap-3 text-blue-800">
+      <div
+        className={`flex md:hidden flex-col gap-3 ${textColor === "white" ? "text-white" : "text-blue-900"}`}
+      >
         {FOOTER_ITEMS.map((item, i) => (
           <div key={i}>
             <li

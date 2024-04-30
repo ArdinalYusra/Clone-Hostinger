@@ -43,9 +43,15 @@ export const Review_Component = ({
   );
 };
 
-export const List = ({ children }: { children: React.ReactNode }) => {
+export const List = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
   return (
-    <li className="flex gap-2 font-semibold text-sm">
+    <li className={`flex gap-2 font-semibold ${className}`}>
       <GiCheckMark />
       {children}
     </li>
@@ -55,9 +61,11 @@ export const List = ({ children }: { children: React.ReactNode }) => {
 export const Coment_List_Rating = ({
   children,
   variant,
+  star,
 }: {
   children: React.ReactNode;
   variant?: "black" | "white";
+  star?: "black" | "gold";
 }) => {
   return (
     <div
@@ -67,7 +75,9 @@ export const Coment_List_Rating = ({
         <IoIosStar /> Trustpilot
       </h1>
       <p className="flex-1 text-sm">{children}</p>
-      <div className="flex items-end gap-2 text-2xl text-slate-500">
+      <div
+        className={`flex items-end gap-2 text-2xl ${star ? "text-orange-800" : "text-slate-500"}`}
+      >
         <IoIosStar />
         <IoIosStar />
         <IoIosStar />

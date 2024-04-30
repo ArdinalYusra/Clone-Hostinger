@@ -1,3 +1,4 @@
+import Navbar from "@/components/shared/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,8 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <div>
+      <Navbar bgColor={"white"} />
+      {children}
+    </div>
   );
 }

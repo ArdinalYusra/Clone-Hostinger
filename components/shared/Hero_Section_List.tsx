@@ -44,7 +44,7 @@ const Hero_Section_List = ({
         <div className="flex flex-col-reverse lg:flex-row gap-3">
           <Button variant={variant}>Claim Deal</Button>
           <div
-            className={` ${text === "white" ? "bg-slate-700" : "bg-slate-200"} flex-center text-sm px-7 py-2 rounded-md font-semibold`}
+            className={` ${text === "white" ? "bg-slate-700" : "bg-slate-200"} flex-center text-sm px-7 py-2.5 rounded-md font-semibold`}
           >
             02 : 07 : 17 : 27
           </div>
@@ -60,7 +60,7 @@ const Hero_Section_List = ({
           alt="Hostinger"
           width={500}
           height={500}
-          className="w-full"
+          className="image-cover"
         />
       </div>
     </div>

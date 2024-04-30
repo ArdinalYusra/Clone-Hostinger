@@ -1,5 +1,28 @@
 import { FooterProps } from "@/types";
 
+export const NAVLINKS = [
+  {
+    name: "WordPress",
+    path: "/",
+  },
+  {
+    name: "Website Builder",
+    path: "/website-builder",
+  },
+  {
+    name: "Hosting",
+    path: "/web-hosting",
+  },
+  {
+    name: "Pro",
+    path: "/pro",
+  },
+  {
+    name: "Domains",
+    path: "/domain-name-search",
+  },
+]
+
 export const FOOTER_ITEMS: FooterProps[] = [
   {
     title: "HOSTING",
@@ -165,5 +188,147 @@ export const DOMAINS = [
     name: ".xyz",
     price: "$13.99",
     discount: "$1.99",
+  },
+]
+
+export const THINGS_BUY_DOMAINS = [
+  {
+    image: "/assets/images/thing-buy-domain-1.png",
+    title: "Keep It Short",
+    description: "While there is no minimum lenght for domain registrations, we recommend buying a domain name that is under three words long. Longer website names are harder to read and will not stand out.",
+  },
+  {
+    image: "/assets/images/thing-buy-domain-2.png",
+    title: "Less Is More",
+    description: "Avoid hyphens, numbers, slang, and easily misspelled words in your domain. Complex elements make website names much harder to reach and remember.",
+  },
+  {
+    image: "/assets/images/thing-buy-domain-3.png",
+    title: "Include Your Brand Name",
+    description: "a great address for your website should include your brand or the target keywords for your niche. A search result with a keyword in your site URL will offer better brand recognition and increase your websites traffic.",
+  },
+  {
+    image: "/assets/images/thing-buy-domain-4.png",
+    title: "Domain Availability Search",
+    description: "Start by doing a domain name search to check if a domain name is available. Remember to also check it has not been trademarked.",
+  },
+  {
+    image: "/assets/images/thing-buy-domain-5.png",
+    title: "Think Locally",
+    description: "While it is ideal to purchase a website name with .com, due to their popularity , a .com TLD can often be unavailable. Consider registering a country-specific extension like .co.uk, .us, or .pk if you target a particular country.",
+  },
+  {
+    image: "/assets/images/thing-buy-domain-6.png",
+    title: "Act Fast",
+    description: "The best website names are quicly taken. do not miss out on the perfect one - do a domain search and buy domain names to start your online projects today.",
+  },
+]
+
+export const DOMAIN_NAME_LIST = [
+  "agency",
+  "ai",
+  "asia",
+  "app",
+  "at",
+  "biz",
+  "blog",
+  "ca",
+  "cc",
+  "ch",
+  "cloud",
+  "club",
+  "co",
+  "co.uk",
+  "com",
+  "com.au",
+  "de",
+  "dev",
+  "es",
+  "eu",
+  "icu",
+  "in",
+  "info",
+  "io",
+  "it",
+  "life",
+  "link",
+  "it",
+  "me",
+  "mx",
+  "net",
+  "nl",
+  "online",
+  "org",
+  "pl",
+  "pro",
+  "se",
+  "shop",
+  "site",
+  "space",
+  "store",
+  "studio",
+  "tech",
+  "tv",
+  "us",
+  "vc",
+  "xyz",
+]
+
+export const DOMAIN_LIST = [
+  {
+    image: "/assets/images/domain-1.png",
+    descrition: "Build trust with the best-known domain names.",
+    price: "$15.99",
+    percent: "69%",
+    discount: "4.99",
+  },
+  {
+    image: "/assets/images/domain-2.png",
+    descrition: "Showcase your technology project with .cloud.",
+    price: "$18.99",
+    percent: "95%",
+    discount: "0.99",
+  },
+  {
+    image: "/assets/images/domain-3.png",
+    descrition: "Start selling products online with .shop.",
+    price: "$34.99",
+    percent: "97%",
+    discount: "0.99",
+  },
+  {
+    image: "/assets/images/domain-4.png",
+    descrition: "Register .io for your tech websites.",
+    price: "$49.99",
+    percent: "20%",
+    discount: "39.99",
+  },
+  {
+    image: "/assets/images/domain-5.png",
+    descrition: "Stay unique with .icu extensions.",
+    price: "$13.99",
+    percent: "93%",
+    discount: "0.99",
+  },
+  {
+    image: "/assets/images/domain-6.png",
+    descrition: "Create an informational website with .info.",
+    price: "$24.99",
+    percent: "84%",
+    discount: "3.99",
+  },
+  {
+    image: "/assets/images/domain-7.png",
+    descrition: "Demonstrate your proficiency through a .pro domain.",
+    price: "$24.99",
+    percent: "88%",
+    discount: "2.99",
+  },
+  {
+    image: "/assets/images/domain-8.png",
+    descrition: "It is a great alternative to .com - generic and universal.",
+    price: "$34.99",
+    percent: "97%",
+    discount: "0.99",
   },
 ]
