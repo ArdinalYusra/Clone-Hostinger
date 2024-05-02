@@ -424,7 +424,7 @@ const Domain_Name_Search_Page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center md:justify-start gap-3">
             {DOMAIN_NAME_LIST.slice(
               0,
-              viewMore ? 12 : DOMAIN_NAME_LIST.length
+              !viewMore ? 12 : DOMAIN_NAME_LIST.length
             ).map((item, i) => (
               <li
                 key={i}

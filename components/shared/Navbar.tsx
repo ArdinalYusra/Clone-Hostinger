@@ -97,7 +97,7 @@ const Navbar = ({ bgColor }: { bgColor?: "black" | "blue" | "white" }) => {
               </div>
               <div className="font-semibold">🏁 English</div>
             </div>
-            <div className="mb-10">
+            <div className="mb-16">
               <Link href={"/login"}>
                 <Button variant="outline" className="flex w-full">
                   Log in
