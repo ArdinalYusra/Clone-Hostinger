@@ -1,9 +1,21 @@
+"use client";
+
 import { ButtonProps } from "@/types";
 import { cva } from "class-variance-authority";
 
-const Button = ({ children, variant, className }: ButtonProps) => {
+const Button = ({
+  children,
+  variant,
+  className,
+  type,
+  onClick,
+}: ButtonProps) => {
   return (
-    <button className={`${buttonVariants({ variant })} ${className} `}>
+    <button
+      type={type}
+      onClick={onClick}
+      className={`${buttonVariants({ variant })} ${className} `}
+    >
       {children}
     </button>
   );

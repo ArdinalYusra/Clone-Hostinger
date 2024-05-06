@@ -6,9 +6,11 @@ import { IoEye } from "react-icons/io5";
 type InputProps = {
   type: string;
   placeholder: string;
+  name?: string;
+  id?: string;
 };
 
-const Input = ({ type, placeholder }: InputProps) => {
+const Input = ({ type, placeholder, name, id }: InputProps) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (

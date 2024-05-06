@@ -15,6 +15,8 @@ export type ButtonProps = {
     children: React.ReactNode;
     variant?: "blue" | "black" | "white" | "outline" | "outlineWhite";
     className?: string 
+    type?: "submit" | "button"
+    onClick?: () => void
   };
 
 export type HeroSectionListProps = {
